@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { SharedModule } from '../shared/shared.module';
 import { BlogRoutingModule } from './blog-routing.module';
@@ -30,7 +31,7 @@ import { BlogSearchComponent } from './components/blog-search/blog-search.compon
     BlogFiltersComponent,
     BlogSearchComponent,
   ],
-  imports: [CommonModule, SharedModule, BlogRoutingModule],
+  imports: [CommonModule, MatChipsModule, SharedModule, BlogRoutingModule],
   exports: [BlogCardComponent, BlogSearchComponent],
 })
-export class BlogModule {}
+export class BlogModule { }

@@ -5,7 +5,7 @@
       <mat-card-subtitle>
         <div class="blog-meta">
           <span class="author"
-            >By {{ blog.author?.username || 'Unknown' }}</span
+            >By {{ blog.author?.fullname || 'Unknown' }}</span
           >
           <span class="date">{{ blog.publishedAt | date : 'medium' }}</span>
           <span class="views">{{ blog.views }} views</span>
